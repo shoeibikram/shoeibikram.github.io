@@ -52,7 +52,6 @@ nav {
   height: 2px; border-radius: 2px; background: var(--teal);
 }
 
-/* hero: fixed height so the page never scrolls; photo never moves */
 header.hero {
   position: relative;
   height: calc(100vh - 66px);
@@ -66,7 +65,7 @@ header.hero {
 }
 .hero-inner { position: relative; padding: 0 0 60px; width: 100%; }
 
-/* one orchestrated reveal on load — headline, then tagline/lede, then CTAs */
+
 .hero-inner > * { opacity: 0; animation: rise-in 0.7s cubic-bezier(.22,.61,.36,1) forwards; }
 .hero-inner > h1 { animation-delay: 0.05s; }
 .hero-inner > .tagline { animation-delay: 0.2s; }
@@ -102,7 +101,7 @@ h1 {
 .btn-secondary { background: rgba(20,27,35,0.55); color: #f4f2ee; border-color: rgba(255,255,255,0.28); backdrop-filter: blur(6px); }
 .btn-secondary:hover { border-color: rgba(255,255,255,0.5); transform: translateY(-1px); }
 
-/* contact list, shown inside the popup modal */
+
 .contact-list { display: flex; flex-direction: column; gap: 6px; }
 .contact-item { display: flex; align-items: center; gap: 14px; padding: 12px 10px; border-radius: 8px; text-decoration: none; color: var(--ink); }
 .contact-item:hover { background: rgba(95,184,171,0.12); }
@@ -110,7 +109,7 @@ h1 {
 .contact-item .label { font-size: 12.5px; color: var(--ink-dim); margin: 0; }
 .contact-item .value { font-size: 15px; font-weight: 600; margin: 0; }
 
-/* blinking bulb indicator on the hero buttons */
+
 .bulb {
   display: inline-block; width: 8px; height: 8px; border-radius: 50%;
   background: #ffd166; flex-shrink: 0;
@@ -121,7 +120,7 @@ h1 {
   50% { opacity: 0.3; box-shadow: 0 0 2px 1px rgba(255,209,102,0.25); }
 }
 
-/* popup modal for nav-strip buttons */
+
 .modal-overlay {
   position: fixed; inset: 0; z-index: 200;
   background: rgba(3,5,7,0.68);
